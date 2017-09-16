@@ -1,11 +1,6 @@
 #include "stdafx.h"
 #include "activation_funcs_worker.h"
 
-
-activation_funcs_worker::~activation_funcs_worker(void)
-{
-}
-
 std::shared_ptr<activation_funcs_worker> activation_funcs_worker::create_activation_funcs_worker(activation_funcs_type af_type)
 {
 	switch(af_type)
@@ -56,3 +51,5 @@ double activation_funcs_worker::get_scale_factor_for_weights_init(int &neurons_n
 	return 0;
 }
 
+activation_funcs_worker::~activation_funcs_worker(void)
+{}
