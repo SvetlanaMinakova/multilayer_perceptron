@@ -2,16 +2,6 @@
 #include "activation_funcs.h"
 #include <math.h>
 
-
-activation_funcs::activation_funcs(void)
-{
-}
-
-
-activation_funcs::~activation_funcs(void)
-{
-}
-
 void activation_funcs::apply_act_f_to_vec(double (*act_f)(double &inp),std::vector<double> &inp, std::vector<double> &result)
 {
 	std::transform(inp.begin(),inp.end(),result.begin(),act_f);	
@@ -136,3 +126,10 @@ double activation_funcs::get_softmax_summ(std::vector <double> &non_activated_st
 		softmax_summ+=exp(i);
 	return softmax_summ;
 }
+
+activation_funcs::activation_funcs(void)
+{}
+
+
+activation_funcs::~activation_funcs(void)
+{}
