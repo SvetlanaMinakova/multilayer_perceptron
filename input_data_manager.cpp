@@ -3,19 +3,6 @@
 #include <algorithm>
 #define DATA_FOLDER_PATH "InputTxtData/"
 
-
-
-input_data_manager::input_data_manager(void)
-{
-
-}
-
-
-input_data_manager::~input_data_manager(void)
-{
-
-}
-
 void input_data_manager::create_samples(std::vector<std::shared_ptr<std::vector<double>>>& source_data_vectors,
 	std::vector<std::shared_ptr<std::vector<double>>>& source_labels,
 	std::vector<std::shared_ptr<std::vector<double>>>& result_x_placeholder,
@@ -179,3 +166,10 @@ int input_data_manager::get_input_data_len(std::vector<std::shared_ptr<std::vect
 	}
 	return data_len;
 }
+
+
+input_data_manager::input_data_manager(void)
+{}
+
+input_data_manager::~input_data_manager(void)
+{}
