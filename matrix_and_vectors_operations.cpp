@@ -1,16 +1,6 @@
 #include "stdafx.h"
 #include "matrix_and_vectors_operations.h"
 
-
-matrix_and_vectors_operations::matrix_and_vectors_operations(void)
-{
-}
-
-
-matrix_and_vectors_operations::~matrix_and_vectors_operations(void)
-{
-}
-
 int matrix_and_vectors_operations::get_max_val_id(std::shared_ptr<std::vector<double>> vect)
 { int cur_id=0;
 	  int max_val_id=0; 
@@ -113,3 +103,11 @@ void matrix_and_vectors_operations::print_matrix(std::shared_ptr<std::vector<std
 {
 	print_matrix(*matrix);
 }
+
+
+matrix_and_vectors_operations::matrix_and_vectors_operations(void)
+{}
+
+matrix_and_vectors_operations::~matrix_and_vectors_operations(void)
+{}
+
